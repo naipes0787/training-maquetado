@@ -1,0 +1,43 @@
+.book-container {
+  display: flex;
+  flex-direction: row;
+  margin: 1em 1em;
+}
+
+.crop {
+	height: 300px;
+	width: 250px;
+	overflow: hidden;
+}
+
+.crop img {
+	height: 300px;
+	width: auto;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-attribute {
+  font-weight: bold;
+  margin-bottom: 0.9em;
+}
+
+.title-placeholder {
+  color: gray;
+  font-weight: normal;
+}
+
+.placeholder {
+  color: gray;
+  font-weight: normal;
+  margin-bottom: 0.9em;
+}
+
+.book-title {
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
