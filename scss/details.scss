@@ -4,6 +4,13 @@ body {
   background-color: $wolox-gray;
 }
 
+.navbar-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 101;
+}
+
 .navbar {
   background-color: white;
   box-shadow: $box-shadow;
@@ -48,13 +55,30 @@ body {
   width: auto;
 }
 
+.back-button-section {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 7em;
+}
+
+.wolox-button {
+  font-size: 1.1em;
+}
+
+.wolox-button::before {
+  margin-right: 0.6em;
+  content: url(back-arrow-20.png);
+  vertical-align: -15%;
+}
+
 .book-detail-container {
   background-color: white;
   box-shadow: $box-shadow;
   display: flex;
   flex-direction: row;
-  margin: 2em 2em;
   width: 50%;
+  margin: 0 auto;
+  margin-top: 1em;
 }
 
 .book-info-detail-container {
@@ -65,7 +89,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  margin: 2em 17em;
+  margin: 7em 17em;
 }
 
 .book-info-list-container {
