@@ -4,6 +4,10 @@ body {
   background-color: $wolox-gray;
 }
 
+.white-body {
+  background-color: white;
+}
+
 .navbar-container {
   position: fixed;
   top: 0;
@@ -50,15 +54,74 @@ body {
   width: 100%;
 }
 
+.small-margin-logo {
+  margin-left: 1.5em;
+  margin-top: 1em;
+}
+
 .crop-logo img {
   height: 5em;
   width: auto;
 }
 
-.back-button-section {
-  width: 70%;
+.login-container {
+  background-color: $wolox-gray;
+  box-shadow: $box-shadow;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
   margin: 0 auto;
   margin-top: 7em;
+  width: 300px;
+}
+
+.login-form-container {
+  margin: 0 2em;
+}
+
+.login-form-element {
+  margin: 1em 0;
+}
+
+.login-label-text {
+  font-size: 1.1em;
+}
+
+.login-input {
+  border-radius: 4px;
+  height: 2.2em;
+  margin-top: 0.5em;
+  padding: 1px;
+  width: 100%;
+}
+
+.login-section-button {
+  border-radius: 4px;
+  font-size: 1.1em;
+  padding: 0.4em 0;
+  text-align: center;
+  width: 100%;
+}
+
+.login-button {
+  background-color: $wolox-lighter-green;
+  color: white;
+}
+
+.login-horizontal-line {
+  border: 1px solid $wolox-darker-gray;
+}
+
+.signup-button {
+  background-color: $wolox-lighter-gray;
+  border: 2px solid $wolox-lighter-green;
+  color: $wolox-lighter-green;
+}
+
+.back-button-section {
+  margin: 0 auto;
+  margin-top: 7em;
+  width: 70%;
 }
 
 .wolox-button {
@@ -66,8 +129,8 @@ body {
 }
 
 .wolox-button::before {
-  margin-right: 0.6em;
   content: url(back-arrow-20.png);
+  margin-right: 0.6em;
   vertical-align: -15%;
 }
 
@@ -76,9 +139,9 @@ body {
   box-shadow: $box-shadow;
   display: flex;
   flex-direction: row;
-  width: 50%;
   margin: 0 auto;
   margin-top: 1em;
+  width: 50%;
 }
 
 .book-info-detail-container {
