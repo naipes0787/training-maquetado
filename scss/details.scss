@@ -1,4 +1,7 @@
 $box-shadow: 2px 2px 5px 5px $shadow-gray;
+$badge-size: 80px;
+$badge-left: 165px;
+$badge-top: -2px;
 
 body {
   background-color: $wolox-gray;
@@ -134,7 +137,7 @@ body {
   vertical-align: -15%;
 }
 
-.book-detail-container {
+.book-detail-information {
   background-color: white;
   box-shadow: $box-shadow;
   display: flex;
@@ -190,10 +193,10 @@ body {
 }
 
 .badge img {
-  height: 80px;
-  left: 165px;
+  height: $badge-size;
+  left: $badge-left;
   position: absolute;
-  top: -2px;
+  top: $badge-top;
   transform: rotate(20deg);
   width: auto;
   z-index: 100;
@@ -206,7 +209,7 @@ body {
 
 .title-placeholder {
   color: gray;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .placeholder {
@@ -218,10 +221,63 @@ body {
 .book-title {
   font-size: 1.6em;
   font-weight: bold;
-  margin-bottom: 1.5em;
+  margin-bottom: 0.5em;
 }
 
 .title-horizontal-line {
   border: 2px solid $wolox-green;
+  margin-bottom: 18px;
   width: 200%;
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+  .book-detail-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .book-detail-information {
+    margin-top: 3em;
+    flex-direction: column;
+  }
+
+  .crop {
+    height: 500px;
+  }
+
+  .crop img {
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .badge img {
+    height: calc($badge-size - 30%);
+    left: $badge-left + 200px;
+  }
+
+  .book-title {
+    font-size: 1.4em;
+  }
+
+  .title-horizontal-line {
+    width: 100%;
+  }
+
+  .book-attribute {
+    font-size: 0.8em;
+  }
+
+  .placeholder {
+    font-size: 0.9em;
+  }
+
+  .back-button-section {
+    margin: 0 auto;
+    margin-top: 3em;
+    width: 10%;
+  }
+
 }
